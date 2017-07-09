@@ -1,0 +1,1 @@
+a:3:{i:0;a:3:{s:2:"id";i:1;s:7:"post_id";i:1;s:7:"content";s:13:"First Comment";}i:1;a:3:{s:2:"id";i:2;s:7:"post_id";i:1;s:7:"content";s:14:"Second Comment";}i:2;a:3:{s:2:"id";i:3;s:7:"posr_id";i:2;s:7:"content";s:14:"Some text here";}}

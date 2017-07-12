@@ -1,16 +1,16 @@
- 
+<?php 
+$categories = getCategories();
+
+//   echo "<pre>";
+//var_dump($categories);
+//echo "</pre>";
+?>
+   
     <ul class="collection with-header">
-      <li class="collection-header"><h4>Товарные категории</h4></li>
-       <ul class="collection">Напитки
-            <li class="collection-item">Соки</li>
-            <li class="collection-item">Кофе</li>
-            <li class="collection-item">Коктейли</li>
-            <li class="collection-item">Чай</li>
-            <li class="collection-item">Алкогольные</li>
-        </ul>
-        <ul class="collection">Кондитерские изделия
-           <li class="collection-item">Пироженные</li>
-           <li class="collection-item">Торты</li>
-           <li class="collection-item">Мороженое</li>        
-        </ul>
+      <li class="collection-header"><h4>Уроки</h4></li>
+       <ul class="collection">
+           <?php foreach ($categories as $category):?>
+            <li class="collection-item"><a href="category_search.php?categoryId=<?= $category['id']?>"><?= $category['title'];?></a></li>
+        <?php endforeach;?>
+    </ul>
     </ul>
